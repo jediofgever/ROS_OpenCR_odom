@@ -8,7 +8,7 @@ A simple Package to pass odometry messages via ROS publisher.
 
 ## ## # Usage
 
-install `rosserial` to be able to communicate with OpenCR 
+#install `rosserial` to be able to communicate with OpenCR 
 
 
 `cd catkin_ws/src`
@@ -19,7 +19,7 @@ install `rosserial` to be able to communicate with OpenCR
 
 `catkin_make`
 
-clone this repository to your` catkin_ws/src`
+#clone this repository to your` catkin_ws/src`
 
 
 `cd catkin_ws/src`
@@ -32,13 +32,16 @@ clone this repository to your` catkin_ws/src`
 
 create executable of python file if it fails to start
 
-sudo chmod +x catkin_ws/src/ROS_OpenCR_odom/teleop_twist_keyboard/teleop_twist_keyboard.py
+
+`sudo chmod +x catkin_ws/src/ROS_OpenCR_odom/teleop_twist_keyboard/teleop_twist_keyboard.py`
 
 
 ## COMPILE 
 upload odometry.ino file to your board 
 
 start rosserial
+
+
 `roscore`
 
 `rosrun rosserial_python serial_node.py /dev/ttyACM0`
@@ -49,6 +52,7 @@ launch your command interface(keyboard in this case)
 ## VISUALIZE 
 
 `rosrun rviz rviz`
+
 add a tf to see coordinate transformation between `odom` and `base_link` frames
 
 
