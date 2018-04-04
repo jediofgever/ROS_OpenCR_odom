@@ -35,7 +35,7 @@ unsigned long old_time;
 const float Pi = 3.14159;
 const double R = 0.09;         //Wheel Radius
 const int N = 120 ;            // Number of Ticks Per revolution
-const double L = 46 ;           //Distance between left and right wheels
+const double L = 0.46 ;           //Distance between left and right wheels
 
 double x = 0.0;
 double y = 0.0;
@@ -87,7 +87,7 @@ void SetupEncoders()
 void LBcounter()
 {
   LB = digitalRead(encoder_LB);   // read the input pin
-  LBpulses -= (digitalRead(go) == LOW || digitalRead(right) == LOW) ? -1 : +1;
+  LBpulses -= (LB) ? -1 : +1;
 
 
 
@@ -95,14 +95,14 @@ void LBcounter()
 void RBcounter()
 {
   RB = digitalRead(encoder_RB);   // read the input pin
-  RBpulses -= (digitalRead(go) == LOW || digitalRead(left) == LOW) ? -1 : +1;
+  RBpulses -= (RB) ? -1 : +1;
 
 }
 
 void LFcounter()
 {
   LF = digitalRead(encoder_LF);   // read the input pin
-  LFpulses -= (digitalRead(go) == LOW || digitalRead(right) == LOW) ? -1 : +1;
+  LFpulses -= (LF) ? -1 : +1;
 
 
 }
@@ -110,7 +110,7 @@ void LFcounter()
 void RFcounter()
 {
   RF = digitalRead(encoder_RF);   // read the input pin
-  RFpulses -= (digitalRead(go) == LOW || digitalRead(left) == LOW) ? -1 : +1;
+  RFpulses -= (RF) ? -1 : +1;
 
 }
 
