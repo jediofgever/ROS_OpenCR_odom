@@ -39,6 +39,10 @@ create executable of python file if it fails to start
 ## COMPILE 
 upload odometry.ino file to your board 
 
+
+
+A you tube video of operationg this ; https://youtu.be/lk46MhJqizM
+
 start rosserial
 
 
