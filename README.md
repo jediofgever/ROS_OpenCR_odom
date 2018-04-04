@@ -12,16 +12,22 @@ install `rosserial` to be able to communicate with OpenCR
 
 
 `cd catkin_ws/src`
+
 `git clone https://github.com/ros-drivers/rosserial`
+
 `cd ..`
+
 `catkin_make`
 
 clone this repository to your` catkin_ws/src`
 
 
 `cd catkin_ws/src`
+
 `git clone https://github.com/jediofgever/ROS_OpenCR_odom.git`
+
 `cd ..`
+
 `catkin_make`
 
 create executable of python file if it fails to start
