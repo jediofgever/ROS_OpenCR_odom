@@ -1,12 +1,12 @@
 # ROS_OpenCR_odom
-A interface for recieving odometry messaging from OpenCR and publishing them as ROS messages.
+A interface for recieving odometry messaging from OpenCR(can be arduino as well) and publishing them as ROS messages.
 
 
 Welcome to the ROS_OpenCR_odom wiki!
 
 A simple Package to pass odometry messages via ROS publisher.
 
-## ## # Usage
+## Usage
 
 #install `rosserial` to be able to communicate with OpenCR 
 
@@ -41,7 +41,6 @@ upload odometry.ino file to your board
 
 
 
-A you tube video of operationg this ; https://youtu.be/lk46MhJqizM
 
 start rosserial
 
@@ -58,5 +57,9 @@ launch your command interface(keyboard in this case)
 `rosrun rviz rviz`
 
 add a tf to see coordinate transformation between `odom` and `base_link` frames
+
+
+A youtube video of this package operating; https://youtu.be/lk46MhJqizM
+
 
 
